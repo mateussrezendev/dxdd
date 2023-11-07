@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+::-webkit-scrollbar {
+    background-color: #003700;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #72f411;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #4d9b00;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.373);
+}
+
+header img {
+    width: 500px;
+}
+
+.shadowImage {
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+#shadowImage, #shadowImages {
+    width: 400px;
+    height: 300px;
+    background-color: #3f9c14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shadowImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.alienImage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    background-color: #16b85e;
+}
+
+.alienImage img {
+    width: 100px;
+    height: 100px;
+}
+
+.divAlien {
+    width: 100px;
+    height: 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.400);
+    border-radius: 10px;
+    background-color: #54ae28;
+    cursor: pointer;
+}
+
+.divAlien img {
+    transition: .5s;
+}
+
+.divAlien img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', sans-serif;
+    color: #2ff46d;
+}
+
+main {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+figure {
+    text-align: center;
+}
+
+.membros {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.membros img {
+    width: 150px;
+    height: 150px;
+}
+
+footer i {
+    font-size: 40px;
+  }
+  
+  footer i:first-child {
+    cursor: pointer;
+  }
+  
+  .ph-speaker-slash {
+    display: none;
+  }
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Shadow</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    
+    <header>
+        <img src="img/quem.png" alt="Quem é esse alien?">
+    </header>
+
+    <section>
+        <div class="shadowImage">
+            <div id="shadowImages">
+            <img src="img/shadow/insectoideshadow.png" draggable="true" alt="aliens" ondragstart="drag(event)" id="drag" width="400px" height="300px">
+            </div>
+            <div id="shadowImage" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <div class="alienImage">
+
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/besta.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100px">
+            </div>
+            
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/boladecanhao.png" draggable="true" ondragstart="drag(event)" id="drag2" width="100px">
+            </div>
+
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/chamas.png" draggable="true" ondragstart="drag(event)" id="drag3" width="100px">
+            </div>
+
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/insectoide.png" draggable="true" ondragstart="drag(event)" id="drag4" width="100px">
+            </div>
+
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/massacinzenta.png" draggable="true" ondragstart="drag(event)" id="drag5" width="100px">
+            </div>
+
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/quatrobracos.png" draggable="true" ondragstart="drag(event)" id="drag6" width="100px">
+            </div>
+
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/ultrat.png" draggable="true" ondragstart="drag(event)" id="drag7" width="100px">
+            </div>
+
+            <div class="divAlien" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img/aliens/xlr8.png" draggable="true" ondragstart="drag(event)" id="drag8" width="100px">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <i class="ph-duotone ph-speaker-high" onclick="playAudio()"></i>
+        <i class="ph-duotone ph-speaker-slash" onclick="playAudio()"></i>
+
+        <audio id="music" loop>
+            <source src="./audio/ben10.mp3" type="audio/mpeg" >
+        </audio>
+        <main>
+            <h2>Dupla:</h2>
+            <p>Descubra qual é o alien arrastando a imagem</p>
+            <div class="membros">
+                <figure>
+                    <img src="img/mateus.jpg" alt="mateus">
+                    <figcaption title="mateus">Mateus de Rezende Santos</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/eduardo.jpg" alt="dudu">
+                    <figcaption title="dudu">Eduardo Henrique de Souza</figcaption>
+                </figure>
+            </div>
+        </main>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
